@@ -2,7 +2,7 @@
 
 [![PlatformIO](https://img.shields.io/badge/PlatformIO-Project-orange?logo=platformio)](https://platformio.org/)
 [![Framework](https://img.shields.io/badge/Framework-Arduino-blue?logo=arduino)](https://www.arduino.cc/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 
 A high-performance, asynchronous-ready firmware built on **VS Code + PlatformIO** for the **Adafruit BMP3XX series** (BMP388 / BMP390) altimeter and temperature sensors. This implementation configures the hardware with aggressive noise-filtering profiles, making it suitable for flight controllers, telemetry loggers, and precision altitude tracking.
 
@@ -45,10 +45,10 @@ Open the Project:Launch VS Code.Go to File -> Open Folder... and select the root
 Build, Upload, and Monitor:Use the PlatformIO status bar shortcuts or run the target commands directly in the terminal:Bash   # Compile and build binaries
    pio run
    
-   # Flash target microcontroller hardware
+Flash target microcontroller hardware
    pio run --target upload
    
-   # Start the runtime Serial Monitor
+   Start the runtime Serial Monitor
    pio device monitor
 📊 Telemetry Output ExampleWhen successfully initialized, your VS Code Serial Monitor will yield standard-structured metrics formatting every 1000ms:PlaintextBMP3XX Initialization...
 BMP388 Initialized Successfully!
